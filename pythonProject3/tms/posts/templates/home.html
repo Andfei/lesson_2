@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css">
+</head>
+<body>
+    <h1 class="t">Hello from posts app!</h1>
+    <div class="divs">
+        <p>jbjkbgvjdsgjdbgjbsgjbgbkdsbgjdsbasj </p>
+    </div>
+    {% for post in posts %}
+        <h3>{{post.title}}</h3>
+        <p>{{post.text}}</p>
+    {% endfor %}
+</body>
+</html>
